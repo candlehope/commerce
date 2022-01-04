@@ -1,0 +1,179 @@
+{
+  "listings": [
+    {
+      "id": 1,
+      "name": "Candle",
+      "title": "Dominion",
+      "user": "521272712",
+      "price": "40",
+      "condition": "like new",
+      "category": [
+        "Card Game",
+        "Deckbuilding",
+        "Hand Management"
+      ],
+      "min_player_count": "1",
+      "max_player_count": "4",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "Candle",
+      "title": "7 wonders",
+      "user": "TEMPORARY USER",
+      "price": "25",
+      "condition": "good",
+      "category": [
+        "Hand Management",
+        "Simultaneous Actions"
+      ],
+      "min_player_count": "2",
+      "max_player_count": "7",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "Candle",
+      "title": "architects",
+      "user": "TEMPORARY USER",
+      "price": "35",
+      "condition": "fair",
+      "category": [
+        "Worker Placement"
+      ],
+      "min_player_count": "2",
+      "max_player_count": "4",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "Candle",
+      "title": "Vagrantsong",
+      "user": "TEMPORARY USER",
+      "price": "80",
+      "condition": "new",
+      "category": [
+        "Dice Rolling",
+        "Simultaneous Actions"
+      ],
+      "min_player_count": "2",
+      "max_player_count": "4",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "Candle",
+      "title": "Vagrantsong",
+      "user": "TEMPORARY USER",
+      "price": "80",
+      "condition": "new",
+      "category": [
+        "Dice Rolling",
+        "Simultaneous Actions"
+      ],
+      "min_player_count": "2",
+      "max_player_count": "4",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "Candle",
+      "title": "",
+      "user": "TEMPORARY USER",
+      "price": "",
+      "condition": "",
+      "category": [],
+      "min_player_count": "",
+      "max_player_count": "",
+      "image": ""
+    },
+    {
+      "id": 7,
+      "name": "Candle",
+      "title": "Cascadia",
+      "user": "114663411409677087961",
+      "price": "38",
+      "condition": "like new",
+      "category": [
+        "Card Drafting",
+        "Tile Placement",
+        "Variable Player Powers"
+      ],
+      "min_player_count": "1",
+      "max_player_count": "4",
+      "image": ""
+    },
+    {
+      "user": "114663411409677087961",
+      "name": "Candle",
+      "title": "A Feast For Odin",
+      "price": "60",
+      "condition": "Very Good",
+      "category": [
+        "Worker Placement",
+        "Dice Rolling",
+        "Tile Placement"
+      ],
+      "min_player_count": "1",
+      "max_player_count": "4",
+      "image": "",
+      "id": 8
+    },
+    {
+      "user": null,
+      "title": "Clank!",
+      "price": "30",
+      "condition": "good",
+      "category": [
+        "Hand Management",
+        "Card Drafting"
+      ],
+      "min_player_count": "2",
+      "max_player_count": "4",
+      "image": "",
+      "id": 9
+    },
+    {
+      "user": null,
+      "title": "Pan Am",
+      "price": "20",
+      "condition": "good",
+      "category": [
+        "Auction/Bidding",
+        "Tile Placement"
+      ],
+      "min_player_count": "2",
+      "max_player_count": "4",
+      "image": "",
+      "id": 10
+    },
+    {
+      "user": "114663411409677087961",
+      "name": "Tommy Herwig",
+      "title": "Pandemic",
+      "price": "20",
+      "condition": "good",
+      "category": [
+        "Cooperative"
+      ],
+      "min_player_count": "1",
+      "max_player_count": "5",
+      "image": "",
+      "id": 11
+    },
+    {
+      "user": "114663411409677087961",
+      "name": "Tommy Herwig",
+      "title": "Quantum",
+      "price": "70",
+      "condition": "Good",
+      "category": [
+        "Pick-up and Deliver"
+      ],
+      "min_player_count": "2",
+      "max_player_count": "4",
+      "image": "",
+      "id": 12
+    }
+  ]
+}
