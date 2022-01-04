@@ -2,7 +2,7 @@ import React from "react";
 import listings from "../api/listings";
 import { connect } from "react-redux";
 import { fetchListings, priceFilter } from "../actions";
-import RefineSidebar from "./RefineSidebar";
+import RefineSidebar from "./sidebar/RefineSidebar";
 import { Col, Row } from "react-bootstrap";
 
 class NewArrivals extends React.Component {
