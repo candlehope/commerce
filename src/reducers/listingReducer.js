@@ -7,6 +7,8 @@ export default (state = { allListings: [] }, action) => {
     case "PRICE_FILTER":
       // price_filter takes a list of two integers
       return { ...state, priceFilter: action.payload };
+    case "MECHANICS_FILTER":
+      return { ...state, mechanicsFilter: action.payload };
     default:
       return state;
   }

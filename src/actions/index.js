@@ -21,6 +21,13 @@ export const priceFilter = (parameters) => {
   };
 };
 
+export const mechanicsFilter = (description) => {
+  return {
+    type: "MECHANICS_FILTER",
+    payload: description,
+  };
+};
+
 export const postListing = (listing) => async () => {
   let response = await listings.post("/listings", {
     user: listing.user,

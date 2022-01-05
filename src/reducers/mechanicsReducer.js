@@ -1,6 +1,7 @@
 const mechanicsReducer = [
   { value: "Area Control", label: "Area Control" },
   { value: "Auction/Bidding", label: "Auction/Bidding" },
+  { value: "Family", label: "Family" },
   { value: "Card Drafting", label: "Card Drafting" },
   { value: "Cooperative", label: "Cooperative" },
   { value: "Deck Building", label: "Deck Building" },
