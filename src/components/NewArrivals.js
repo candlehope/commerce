@@ -1,7 +1,12 @@
 import React from "react";
 import listings from "../api/listings";
 import { connect } from "react-redux";
-import { fetchListings, priceFilter, mechanicsFilter } from "../actions";
+import {
+  fetchListings,
+  priceFilter,
+  mechanicsFilter,
+  conditionFilter,
+} from "../actions";
 import RefineSidebar from "./sidebar/RefineSidebar";
 import { Col, Row } from "react-bootstrap";
 
@@ -31,11 +36,18 @@ class NewArrivals extends React.Component {
     return listing.category.includes(this.props.selectedMechanics);
   };
 
+  byCondition = (listing) => {
+    if (this.props.selectedCondition === "") return true;
+    if (typeof this.props.selectedCondition === "undefined") return true;
+    return listing.condition.includes(this.props.selectedCondition);
+  };
+
   renderList() {
     return this.props.listings
       .filter(this.bySearch)
       .filter(this.byPrice)
       .filter(this.byMechanics)
+      .filter(this.byCondition)
       .slice(0)
       .reverse()
       .map((listing) => {
@@ -59,6 +71,7 @@ class NewArrivals extends React.Component {
             <RefineSidebar
               onPriceSelected={this.props.priceFilter}
               onMechanicsSelected={this.props.mechanicsFilter}
+              onConditionSelected={this.props.conditionFilter}
             />
           </Col>
           <Col>
@@ -77,6 +90,7 @@ const mapStateToProps = (state) => {
     userFilter: state.listings.searchFilter,
     selectedPrice: state.listings.priceFilter,
     selectedMechanics: state.listings.mechanicsFilter,
+    selectedCondition: state.listings.conditionFilter,
   };
 };
 
@@ -84,4 +98,5 @@ export default connect(mapStateToProps, {
   fetchListings,
   priceFilter,
   mechanicsFilter,
+  conditionFilter,
 })(NewArrivals);

@@ -9,6 +9,8 @@ export default (state = { allListings: [] }, action) => {
       return { ...state, priceFilter: action.payload };
     case "MECHANICS_FILTER":
       return { ...state, mechanicsFilter: action.payload };
+    case "CONDITION_FILTER":
+      return { ...state, conditionFilter: action.payload };
     default:
       return state;
   }

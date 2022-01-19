@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import { Outlet, Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-
+import { connect } from "react-redux";
 const Layout = () => {
   return (
     <>

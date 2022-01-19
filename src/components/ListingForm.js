@@ -39,8 +39,8 @@ class ListingForm extends React.Component {
     this.setState({ price: event.target.value });
   };
 
-  onChangeCondition = (event) => {
-    this.setState({ condition: event.target.value });
+  onChangeCondition = (choice) => {
+    this.setState({ condition: choice.value });
   };
 
   onChangeMin = (event) => {
@@ -62,7 +62,10 @@ class ListingForm extends React.Component {
           <input onChange={this.onChangePrice} type="number" />
           <br />
           condition
-          <input onChange={this.onChangeCondition} />
+          <Select
+            onChange={this.onChangeCondition}
+            options={this.props.condition}
+          />
           <br />
           mechanics
           <Select
@@ -88,6 +91,7 @@ const mapStateToProps = (state) => {
     mechanics: state.mechanics,
     userId: state.auth.userId,
     name: state.auth.name,
+    condition: state.condition,
   };
 };
 

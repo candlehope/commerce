@@ -28,6 +28,13 @@ export const mechanicsFilter = (description) => {
   };
 };
 
+export const conditionFilter = (condition) => {
+  return {
+    type: "CONDITION_FILTER",
+    payload: condition,
+  };
+};
+
 export const postListing = (listing) => async () => {
   let response = await listings.post("/listings", {
     user: listing.user,
