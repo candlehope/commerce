@@ -70,8 +70,11 @@ class NewArrivals extends React.Component {
           <Col xs="2">
             <RefineSidebar
               onPriceSelected={this.props.priceFilter}
+              selectedPrice={this.props.selectedPrice}
               onMechanicsSelected={this.props.mechanicsFilter}
+              selectedMechanics={this.props.selectedMechanics}
               onConditionSelected={this.props.conditionFilter}
+              selectedCondition={this.props.selectedCondition}
             />
           </Col>
           <Col>

@@ -3,6 +3,11 @@ import { Form, ListGroup } from "react-bootstrap";
 
 class MechanicsSelector extends React.Component {
   onRadioClick = (event) => {
+    if (this.props.selectedMechanics === event.target.value) {
+      event.target.checked = false;
+      this.props.onMechanicsSelected(undefined);
+      return;
+    }
     this.props.onMechanicsSelected(event.target.value);
   };
 

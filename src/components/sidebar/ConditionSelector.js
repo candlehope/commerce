@@ -3,7 +3,11 @@ import { Form, ListGroup } from "react-bootstrap";
 
 class ConditionSelector extends React.Component {
   onRadioClick = (event) => {
-    console.log(event.target.value);
+    if (this.props.selectedCondition === event.target.value) {
+      event.target.checked = false;
+      this.props.onConditionSelected(undefined);
+      return;
+    }
     this.props.onConditionSelected(event.target.value);
   };
 

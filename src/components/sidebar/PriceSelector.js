@@ -2,14 +2,23 @@ import React from "react";
 import { Form, ListGroup } from "react-bootstrap";
 
 class PriceSelector extends React.Component {
-    
+  priceLookup = {
+    "<10": [0, 10],
+    "10-25": [10, 25],
+    "25-50": [25, 50],
+    "50-100": [50, 100],
+    ">100": [100, Infinity],
+  };
+
   onRadioClick = (event) => {
-    if (event.target.value === "<10") this.props.onPriceSelected([0, 10]);
-    if (event.target.value === "10-25") this.props.onPriceSelected([10, 25]);
-    if (event.target.value === "25-50") this.props.onPriceSelected([25, 50]);
-    if (event.target.value === "50-100") this.props.onPriceSelected([50, 100]);
-    if (event.target.value === ">100")
-      this.props.onPriceSelected([100, Infinity]);
+    console.log(event.target.value);
+    console.log(this.props.selectedPrice);
+    if (this.props.selectedPrice === this.priceLookup[event.target.value]) {
+      event.target.checked = false;
+      this.props.onPriceSelected(undefined);
+      return;
+    }
+    this.props.onPriceSelected(this.priceLookup[event.target.value]);
   };
 
   render() {

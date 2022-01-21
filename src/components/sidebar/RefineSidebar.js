@@ -9,12 +9,17 @@ class RefineSidebar extends React.Component {
   render() {
     return (
       <div>
-        <PriceSelector onPriceSelected={this.props.onPriceSelected} />
+        <PriceSelector
+          onPriceSelected={this.props.onPriceSelected}
+          selectedPrice={this.props.selectedPrice}
+        />
         <MechanicsSelector
           onMechanicsSelected={this.props.onMechanicsSelected}
+          selectedMechanics={this.props.selectedMechanics}
         />
         <ConditionSelector
           onConditionSelected={this.props.onConditionSelected}
+          selectedCondition={this.props.selectedCondition}
         />
       </div>
     );
